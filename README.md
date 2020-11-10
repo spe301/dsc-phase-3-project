@@ -28,7 +28,8 @@
   
  To make the model more efficient I ran a feature importance test to identify which features had the most and least importance.
 
-Insert image
+
+<img src="Images/FI1.png/">
 
   After playing around with a few features I decided that it would be best to drop all the region columns, %evening calls, %night calls, and number of voicemails. This is because this combination produced 100% accuracy and recall, ability to label 1’s as 1’s in a binary classification problem.
 
