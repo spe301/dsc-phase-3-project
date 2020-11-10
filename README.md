@@ -2,8 +2,6 @@
 
   In this project I looked at SyriaTel’s customer data to predict churn, customers leaving the service. SyriaTel is a Syria based phone service provider, however we are only looking at the data of American customers.
   
-  <img src="images/download.png/">
-  
  ##  Summary of findings
   
   The data shows that customers who leave, on average, make more customer service calls, make fewer but longer calls, and fewer voicemails than the customers who stay. No strong correlations were found between region, however customers who leave and live on the west coast make fewer calls than any other group (combination of region and churn or not).
@@ -40,6 +38,7 @@
 
 To make the model just a little bit better I generated 3 new features, total minutes, % international calls, and irregular calls (international calls + customer service calls), just to see if they were good enough to replace any of the remaining features. In the end they all had higher feature importance than 3 other features and was able to replace them.
 <img src="images/round5.png/">
+<img src="images/FI2.png/">
 
 ## Final model
 
