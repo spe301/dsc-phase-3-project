@@ -36,6 +36,7 @@ Now we've got a bit of a precision issue, a lot of false positives.
 
   After playing around with a few features I decided that it would be best to drop all the region columns, %evening calls, %night calls, and number of voicemails. This is because this combination produced 100% accuracy and recall, ability to label 1’s as 1’s in a binary classification problem.
 <img src="images/round11.png/">
+<img src="images/round8.png/">
 
 ## Feature Engineering
 
