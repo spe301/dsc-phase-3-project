@@ -34,18 +34,17 @@ Now we've got a bit of a precision issue, a lot of false positives.
 
 <img src="images/FI1.png/">
 
-  After playing around with a few features I decided that it would be best to drop all the region columns, %evening calls, %night calls, and number of voicemails. This is because this combination produced 100% accuracy and recall, ability to label 1’s as 1’s in a binary classification problem.
-<img src="images/round11.png/">
+  After playing around with a few features I decided that it would be best to drop all the region columns, %evening calls, %night calls, and number of voicemails. This is because this combination produced 97-98% accuracy and 86% recall, ability to label 1’s as 1’s in a binary classification problem.
 <img src="images/round8.png/">
 
 ## Feature Engineering
 
 To make the model just a little bit better I generated 3 new features, total minutes, % international calls, and irregular calls (international calls + customer service calls), just to see if they were good enough to replace any of the remaining features. In the end they all had higher feature importance than 3 other features and was able to replace them.
-<img src="images/round5.png/">
+<img src="images/round11.png/">
 <img src="images/FI2.png/">
 
 ## Final model
 
-The Final model was a Gradient Boosted Random Forest with a max depth of 9, 250 trees, and a minimum of 2 samples per leaf. I came up with these parameters using sklearn’s GridSearchCV.
+The Final model was a Gradient Boosted Random Forest with a max depth of 6 and 200 trees. I came up with these parameters using sklearn’s GridSearchCV. Unfortunatley, the model preformed worse with the engineered features, although recall improved to 96% the false positives weren't worth it.
 
 <img src="images/round10.png/">
