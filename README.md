@@ -5,6 +5,7 @@
  ##  Summary of findings
   
   The data shows that customers who leave, on average, make more customer service calls, make fewer but longer calls, and fewer voicemails than the customers who stay. No strong correlations were found between region, however customers who leave and live on the west coast make fewer calls than any other group (combination of region and churn or not).
+  
  <img src="images/cs_calls.png/"> 
   <img src="images/day_minutes.png/">
   <img src="images/vmail.png/">
