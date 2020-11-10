@@ -23,7 +23,9 @@
   ## Smoting
   
   After deciding to go with Standard-Scaling, the next step was to fix class imbalances. Only 10% of the customers in the dataset were labeled as churn. Because of this my model could label everything as not churn and still have 90% accuracy, this is why accuracy is often not the best metric, especially in binary classification problems like this one. My Gradient Boosted Random forest was already doing fine, but I was able to implement SMOTE, Synthetic Minority Oversampling Technique, for a near perfect recall and accuracy. In Summary, because I had about 3,000 non churn customers, 0, and 300 churn customers, 1, I generated ~2700 lookalike churn customers. This way the model would be penalized much more for mislabeling customers as 0 when they were really a 1.
-<img src="images/round3.png/">
+<img src="images/round9.png/">
+
+Now we've got a bit of a precision issue, a lot of false positives.
   
   ## Feature Importance
   
@@ -33,7 +35,7 @@
 <img src="images/FI1.png/">
 
   After playing around with a few features I decided that it would be best to drop all the region columns, %evening calls, %night calls, and number of voicemails. This is because this combination produced 100% accuracy and recall, ability to label 1’s as 1’s in a binary classification problem.
-<img src="images/round4.png/">
+<img src="images/round8.png/">
 
 ## Feature Engineering
 
