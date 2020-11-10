@@ -35,7 +35,7 @@ Now we've got a bit of a precision issue, a lot of false positives.
 <img src="images/FI1.png/">
 
   After playing around with a few features I decided that it would be best to drop all the region columns, %evening calls, %night calls, and number of voicemails. This is because this combination produced 100% accuracy and recall, ability to label 1’s as 1’s in a binary classification problem.
-<img src="images/round8.png/">
+<img src="images/round11.png/">
 
 ## Feature Engineering
 
@@ -47,4 +47,4 @@ To make the model just a little bit better I generated 3 new features, total min
 
 The Final model was a Gradient Boosted Random Forest with a max depth of 9, 250 trees, and a minimum of 2 samples per leaf. I came up with these parameters using sklearn’s GridSearchCV.
 
-<img src="images/round7.png/">
+<img src="images/round10.png/">
