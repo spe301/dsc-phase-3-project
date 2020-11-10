@@ -45,6 +45,6 @@ To make the model just a little bit better I generated 3 new features, total min
 
 ## Final model
 
-The Final model was a Gradient Boosted Random Forest with a max depth of 6 and 200 trees. I came up with these parameters using sklearn’s GridSearchCV. Unfortunatley, the model preformed worse with the engineered features, although recall improved to 96% the false positives weren't worth it.
+The Final model was a Gradient Boosted Random Forest with a max depth of 6 and 200 trees. I came up with these parameters using sklearn’s GridSearchCV. Unfortunatley, the model preformed worse with the engineered features, although recall improved to 94%, the false positives weren't worth it.
 
 <img src="images/round10.png/">
