@@ -43,4 +43,5 @@ To make the model just a little bit better I generated 3 new features, total min
 ## Final model
 
 The Final model was a Gradient Boosted Random Forest with a max depth of 9, 250 trees, and a minimum of 2 samples per leaf. I came up with these parameters using sklearn’s GridSearchCV.
+
 <img src="images/round7.png/">
