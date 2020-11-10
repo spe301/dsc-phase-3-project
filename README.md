@@ -29,7 +29,7 @@ Now we've got a bit of a precision issue, a lot of false positives.
   
   ## Feature Importance
   
- To make the model more efficient I ran a feature importance test to identify which features had the most and least importance.
+ To make the model more efficiently I ran a feature importance test to identify which features had the most and least importance.
 
 
 <img src="images/FI1.png/">
