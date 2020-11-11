@@ -16,13 +16,20 @@ The goal of this project is to use machine learning to predict customer churn, t
 3. the average day call is 32 seconds for retained customers and 30 seconds for churn customers, this difference is negligeble.
 4. customer service calls are the strongest correlated with churn. If a customer has to make multiple customer service calls it is a big sign they may leave the service, 56% of customers who leave make 2 or more customer service calls. For this reason employees should make providing quality customer support a priority. Customer service calls are very weakly correlated with all other features.
 
-<img src="images/cs_calls.png/"> customer service calls per month
-<img src="images/vmail.png/"> voicemails per month
-<img src="images/day_minutes.png/"> day minutes per month
+customer service calls per month
+<img src="images/cs_calls.png/"> 
+
+voicemails per month
+<img src="images/vmail.png/"> 
+
+day minutes per month
+<img src="images/day_minutes.png/"> 
 
 ## Modeling
 
 I tested out severall models and decided to go with Gradient Boosting because it had high testing accuracy, train and test accuracy were also pretty close to eachother. a large gap between train and test is undesired and a sign of overfitting.
+
+<img src="images/17.png/">
 
 ## Evaluation Metric and Results
 
