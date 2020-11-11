@@ -3,9 +3,9 @@ from sklearn.ensemble import GradientBoostingClassifier
 from sklearn.preprocessing import StandardScaler
 from sklearn.pipeline import Pipeline
 
-data = pd.read_csv(r'C:\Users\aacjp\OneDrive\Desktop\data\tables\FinalChurn.csv')
+data = pd.read_csv(r'C:\Users\aacjp\OneDrive\Desktop\data\tables\Churn3.csv')
 data = data.drop(['Unnamed: 0'], axis='columns')
-val = pd.read_csv(r'C:\Users\aacjp\OneDrive\Desktop\data\tables\FinalChurnVal.csv')
+val = pd.read_csv(r'C:\Users\aacjp\OneDrive\Desktop\data\tables\ChurnValidation.csv')
 val = val.drop(['Unnamed: 0'], axis='columns')
 X = data.drop(['churn'], axis='columns')
 y = data['churn']
