@@ -14,6 +14,27 @@ The goal of this project is to use machine learning to predict customer churn, t
 1. Although there is no major difference, churn customers made fewer calls than retained customers in the Northwest and Southwest however retention and calls stayed the same in the Southeast and Midwest. Pay somewhat closer attention to customer's calls in the Western US as many churn customers there make slightly fewer day calls.
 2. The results clearly show that the cost of call time is a fixed rate. Costing 17 cents an hour during the day, 9 cents an hour in the evening, and 5 cents an hour at night. This was helpful for myself in the context of understanding the data, but wouldn't be very helpful to the company as they are likley alredy aware of this.
 3. the average day call is 32 seconds for retained customers and 30 seconds for churn customers, this difference is negligeble.
-4. customer service calls are the strongest correlated with churn. If a customer has to make multiple customer service calls it is a big sign they may leave the service, 56% of customers who leave make 2 or more customer service calls. For this reason employees should make providing quality customer support a priority. Customer service calls are very weakly correleated with all other features.
+4. customer service calls are the strongest correlated with churn. If a customer has to make multiple customer service calls it is a big sign they may leave the service, 56% of customers who leave make 2 or more customer service calls. For this reason employees should make providing quality customer support a priority. Customer service calls are very weakly correlated with all other features.
 
 <img src="images/cs_calls.png/">
+
+## Modeling
+
+I tested out severall models and decided to go with Gradient Boosting because it had high testing accuracy, train and test accuracy were also pretty close to eachother. a large gap between train and test is undesired and a sign of overfitting.
+
+## Evaluation Metric and Results
+
+Because the objective was to predict churn, I decided to use recall for the evaluation metric. This is because the dataset was only 15% churn and the model could easially 'get away with' labling everything as a zero.
+
+<img src="images/round1.png/">
+
+As you can see, the model got ~66% of the 1's (churn customers) labled correctly. This was done without any hypertuning and training the model on the cleaned data. After normalizing the data via StandardScaler, resampling the data via SMOTE sampling, dropping the 12 least important features, and hypertuning the model I was able to get recall up to 86% and accuracy up to 97-98%.
+
+<img src="images/round11.png/">
+
+I tried engineering new features, irreg calls (customer service calls + international calls), percent international calls, and total minutes. Although this increased recall to 94%, the model predicted a lot of 0's as 1's which isn't good either
+
+<img src="images/round10.png/">
+
+for more details on the modeling feel free to check out my blog
+https://aacjpw.wixsite.com/website-1/post/predicting-customer-churn-for-syriatel
