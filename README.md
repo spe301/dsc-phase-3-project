@@ -2,6 +2,8 @@
 
 The goal of this project is to use machine learning to predict customer churn, this way we are aware of what customers may leave in order to prevent customer churn. In this project I looked at SyriaTel’s customer data to predict churn, customers leaving the service. SyriaTel is a Syria based phone service provider, however we are only looking at the data of American customers. It should also be noted that the data is measured over the course of a month.
 
+<img src="images/download.png/"> 
+
 ## Overview of notebooks and script
 1. Phase3_EDA.ipynb: data exploration
 2. Phase3_ModelBuilding.ipynb: model building
