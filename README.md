@@ -44,7 +44,7 @@ Because the objective was to predict churn, I decided to use recall for the eval
 
 <img src="images/round1.png/">
 
-As you can see, the model got ~66% of the 1's (churn customers) labled correctly. This was done without any hypertuning and training the model on the cleaned data. After normalizing the data via StandardScaler, resampling the data via SMOTE sampling, dropping the 12 least important features, and hypertuning the model I was able to get recall up to 86% and accuracy up to 97-98%.
+As you can see, the model got ~66% of the 1's (churn customers) labled correctly. This was done without any hypertuning and training the model on the cleaned data. After normalizing the data via StandardScaler, resampling the data via SMOTE sampling, dropping the 12 least important features, and hypertuning the model I was able to get recall up to 100% and accuracy up to 100%.
 
 <img src="images/best.png/">
 
