@@ -46,7 +46,7 @@ Because the objective was to predict churn, I decided to use recall for the eval
 
 As you can see, the model got ~66% of the 1's (churn customers) labled correctly. This was done without any hypertuning and training the model on the cleaned data. After normalizing the data via StandardScaler, resampling the data via SMOTE sampling, dropping the 12 least important features, and hypertuning the model I was able to get recall up to 86% and accuracy up to 97-98%.
 
-<img src="images/round11.png/">
+<img src="images/best.png/">
 
 I tried engineering new features, irreg calls (customer service calls + international calls), percent international calls, and total minutes. Although this increased recall to 94%, the model predicted a lot of 0's as 1's which isn't good either
 
