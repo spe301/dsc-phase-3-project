@@ -48,7 +48,7 @@ As you can see, the model got ~66% of the 1's (churn customers) labled correctly
 
 <img src="images/best.png/">
 
-I tried engineering new features, irreg calls (customer service calls + international calls), percent international calls, and total minutes. Although this increased recall to 94%, the model predicted a lot of 0's as 1's which isn't good either
+I tried engineering new features, irreg calls (customer service calls + international calls), percent international calls, and total minutes. Although this decreased recall to 94%, the model predicted a lot of 0's as 1's which isn't good either
 
 <img src="images/round10.png/">
 
