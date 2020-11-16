@@ -54,3 +54,7 @@ I tried engineering new features, irreg calls (customer service calls + internat
 
 for more details on the modeling feel free to check out my blog
 https://aacjpw.wixsite.com/website-1/post/predicting-customer-churn-for-syriatel
+
+## Future Works
+
+A great continuation of this project would be building a classifier that helps clients decide what kind of plan to sign up for. This could increase customer satisfaction, prevent churn, and provide a personal touch.
