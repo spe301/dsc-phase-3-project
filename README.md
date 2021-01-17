@@ -32,9 +32,9 @@ voicemails per month
 day minutes per month
 <img src="images/day_minutes.png/"> 
 
-## Modeling
+## Modeling and Pip Package
 
-I tested out severall models and decided to go with Gradient Boosting because it had high testing accuracy, train and test accuracy were also pretty close to eachother. a large gap between train and test is undesired and a sign of overfitting.
+I tested out severall models and decided to go with Gradient Boosting because it had high testing accuracy, train and test accuracy were also pretty close to eachother. a large gap between train and test is undesired and a sign of overfitting. I also used my Potosnail Library to help me save time and get through the modeling faster. Potosnail can be installed via 'pip install Potosnail==0.0.5', and imported via 'import potosnail'. Feel free to visit it's repo here https://github.com/spe301/Potosnail! 
 
 <img src="images/17.png/">
 
@@ -42,18 +42,18 @@ I tested out severall models and decided to go with Gradient Boosting because it
 
 Because the objective was to predict churn, I decided to use recall for the evaluation metric. This is because the dataset was only 15% churn and the model could easially 'get away with' labling everything as a zero.
 
-<img src="images/round1.png/">
+<img src="images/cm1.png/">
 
 As you can see, the model got ~66% of the 1's (churn customers) labled correctly. This was done without any hypertuning and training the model on the cleaned data. After normalizing the data via StandardScaler, resampling the data via SMOTE sampling, dropping the 12 least important features, and hypertuning the model I was able to get recall up to 100% and accuracy up to 100%.
 
-<img src="images/best.png/">
+<img src="images/cm2.png/">
 
 I tried engineering new features, irreg calls (customer service calls + international calls), percent international calls, and total minutes. This decreased recall to 94%, the model predicted a lot of 0's as 1's which isn't good either
 
-<img src="images/round10.png/">
+<img src="images/cm3.png/">
 
 for more details on the modeling feel free to check out my blog
-https://aacjpw.wixsite.com/website-1/post/predicting-customer-churn-for-syriatel
+https://spencerholley.medium.com/predicting-customer-churn-for-syriatel-48970c71a326
 
 ## Future Works
 
